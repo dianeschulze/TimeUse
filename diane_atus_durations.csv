@@ -1,0 +1,35 @@
+code,label,day_type,diane_avg,atus_avg
+1806,Travel related to education,weekend,23.75,22
+180701,Travel related to consumer purchases,weekend,12.5,2
+010201,Grooming,weekend,67.75,45
+030501,Helping household adults,weekend,6.25,0
+09,Household services,weekend,6.25,0
+020201,Food and drink preparation,weekend,40.75,11
+110101,Eating and drinking,weekend,32,60
+010101,Sleeping,weekend,463.5,538
+120308,Computer use for leisure,weekend,136,21
+020203,Kitchen and food clean-up,weekend,26.5,3
+020902,Household & personal organization and planning,weekend,17.25,2
+060301,Class Work,weekend,347,84
+120101,Socializing and communicating,weekend,118.25,44
+0701,Shopping,weekend,64.5,19
+120303,Television and movies,weekend,35.5,0
+01806,Travel related to education,weekday,38.5,2
+050101,Working,weekday,3,99
+010201,Grooming,weekday,48.2,49
+040599,Helping non-household adults,weekday,2.9,1
+060101,Taking class,weekday,103.7,8
+030501,Helping household adults,weekday,2.9,0
+09,Household services,weekday,1.5,0
+020902,Household & personal organization and planning,weekday,4.3,9
+110101,Eating and drinking,weekday,23.8,74
+010101,Sleeping,weekday,305.7,578
+060299,Extracurricular school activities,weekday,43.8,2
+0701,Shopping,weekday,4,26
+120308,Computer use for leisure,weekday,72.3,20
+020203,Kitchen and food clean-up,weekday,15.1,1
+020201,Food and drink preparation,weekday,35.5,13
+060301,Class Work,weekday,401.5,56
+120101,Socializing and communicating,weekday,65.8,62
+100304,Government services & civic obligations,weekday,0.1,0
+120303,Television and movies,weekday,2.1,0

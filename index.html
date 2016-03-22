@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Diane Schulze</title>
+<style>
+*{
+	stroke:black;
+	font-family:helvetica;
+	font-weight: lighter;
+}
+
+body{
+	padding:40px;
+}
+.weekday-group{
+	fill:blue;
+}
+.weekend-group{
+	fill:red;
+}
+#checkboxes{
+	position:relative;
+	bottom:100px;
+}
+</style>
+</head>
+
+<body>
+<h1>Diane Schulze -- Time Usage </h1>
+<p>This visualization compares my time usage sampled over a two week period from March 2, 2015 to March 15, 2015 to time usage data from college students betwene the ages of 17 and 23 from the American Time Use Survey. I broke my data down into weekends and weekdays because I thought that those days would be significantly differeny. However, I learned that with a few obvious exceptions (e.g. time spent actually in class), I don't spend my time all that differently on the weekends and weekdays. </p>
+<p>I only reported time usage categories for which I had at least one datapoint in the two week period, because I didn't think it would be interesting to look at a graph with a bunch of empty bars representing my time usage. I was surprised to find out how non-representative these two weeks were of how I thin of my time usage in general; for example, these weeks were particularly heavy with coursework, so socializing and exercising suffered, and I didn't make a single phone call to my family (oops).</p>
+<p>Below, select a radio button to display time usage data for that category. Red bars are my data and blue bars are the ATUS data. The y-axis is marked in one-hour increments.</p>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.min.js"></script>
+ <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap/latest/css/bootstrap.css" />
+
+
+<div id='graph1'></div>
+<div id= 'checkboxes'>
+	<input type="radio" name="category" value="010101" class='category-checkbox'checked='checked'>Sleeping
+	<input type="radio" name="category" value="060101" class='category-checkbox'>Taking class
+	<input type="radio" name="category" value="060301" class='category-checkbox'>Class work
+	<input type="radio" name="category" value="120101" class='category-checkbox'>Socializing and communicating
+	<input type="radio" name="category" value="060299" class='category-checkbox'>Extracurricular school activities
+	<input type="radio" name="category" value="050101" class='category-checkbox'>Working
+	<input type="radio" name="category" value="020201" class='category-checkbox'>Food and drink preparation
+	<input type="radio" name="category" value="110101" class='category-checkbox'>Eating & drinking
+	<input type="radio" name="category" value="020203" class='category-checkbox'>Kitchen and food clean-up
+	<input type="radio" name="category" value="120308" class='category-checkbox'>Computer use for leisure
+	<input type="radio" name="category" value="120303" class='category-checkbox'>Television & movies
+	<input type="radio" name="category" value="0701" class='category-checkbox'>Shopping
+	<input type="radio" name="category" value="180701" class='category-checkbox'>Travel related to consumer purchases
+	<input type="radio" name="category" value="1806" class='category-checkbox'>Travel related to education
+	<input type="radio" name="category" value="020902" class='category-checkbox'>Household & personal organization and planning
+	<input type="radio" name="category" value="09" class='category-checkbox'>Household services
+	<input type="radio" name="category" value="100304" class='category-checkbox'>Government services & civic obligations
+	<input type="radio" name="category" value="030501" class='category-checkbox'>Helping household adults
+	<input type="radio" name="category" value="040599" class='category-checkbox'>Helping non-household adults
+	<input type="radio" name="category" value="010201" class='category-checkbox'>Grooming
+</div>
+
+
+<script src="graph1.js"></script>
+
+
+
+
+
+</body>
+</html>
