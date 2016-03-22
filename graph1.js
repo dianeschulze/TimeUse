@@ -1,7 +1,7 @@
 var width = 800,
 height = 400, 
 sm_buffer = 30, 
-lg_buffer = 70,
+lg_buffer = 150,
 barWidth = 50, 
 marginleft=200,
 margintop=200, 
@@ -17,6 +17,30 @@ var yAxis = d3.svg.axis().orient('left')
           .outerTickSize(0)
           .tickPadding(10).scale(yScale);
 
+svg.call(yAxis);   
+
+var legend = svg.selectAll('.legend').append('g').attr('class','legend');
+var l1 = legend.append('rect').attr('width',200).attr('height',200).style('fill', 'red');
+l1.append('text').text('Diane').attr('class','legend-text');
+
+
+
+	     //    //add color legend
+	     //    var legend = svg.selectAll('.legend').data(scale.domain());
+
+		    // legend.enter().append("g")
+	     //          .attr("class", "legend");
+
+
+		    // legend.append('rect')
+			   //  .attr("x", width-300)
+			   //  .attr("y", function(d,i){return (height-400)+(legendSide+buffer)*i;})
+			   // 	.attr("width", legendSide)
+			   // 	.attr("height", legendSide)
+			   // 	.style("fill", scale);
+
+
+
 var weekdayGroup = svg.append('g').attr('class','weekday-group').attr("transform", "translate("+lg_buffer+",0)");
 var weekendGroup = svg.append('g').attr('class','weekend-group').attr("transform", "translate("+(2*lg_buffer+sm_buffer+2*barWidth)+",0)");
 var weekdayDiane = weekdayGroup.append('g').attr('class','weekday-diane');
@@ -25,17 +49,17 @@ var weekendDiane = weekendGroup.append('g').attr('class','weekend-diane');
 var weekendAtus = weekendGroup.append('g').attr('class','weekend-atus');
 
 svg.append("text")
-    .attr("class", "x label")
+    .attr("class", "x-label")
     .attr("text-anchor", "end")
-    .attr("x", 2*sm_buffer+barWidth)
-    .attr("y", height+10)
+    .attr("x", lg_buffer+sm_buffer+barWidth)
+    .attr("y", height+15)
     .text("Weekdays");
 
 svg.append("text")
-    .attr("class", "x label")
+    .attr("class", "x-label")
     .attr("text-anchor", "end")
-    .attr("x", marginleft+2+sm_buffer+2*barWidth)
-    .attr("y", height+10)
+    .attr("x", 2*lg_buffer+2*sm_buffer+3*barWidth)
+    .attr("y", height+15)
     .text("Weekends");
 
 
